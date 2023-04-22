@@ -1,0 +1,1177 @@
+[
+    {
+        "id": "c3f5c0f99b10675b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "97ddbfd13e413a63",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0a8e01",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#2f7709",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0a8e01",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0a8e01",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0fda02",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0a8e01",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "747fbe2aceed0c04",
+        "type": "ui_tab",
+        "name": "Avaliação Física",
+        "icon": "donut_large",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d2eb3bfd00aedcab",
+        "type": "ui_group",
+        "name": "Medidas Aferidas (adipômetro)",
+        "tab": "747fbe2aceed0c04",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "46540bfb4fd123ee",
+        "type": "ui_tab",
+        "name": "Historico",
+        "icon": "assignment",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dfb278de889fb08e",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "f0e6ef93afe0cbdb",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "149fd14144664b3e",
+        "type": "ui_group",
+        "name": "Dados do Aluno/Cliente",
+        "tab": "747fbe2aceed0c04",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "983aebd7833af63e",
+        "type": "ui_group",
+        "name": "Resultados",
+        "tab": "747fbe2aceed0c04",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f0e6ef93afe0cbdb",
+        "type": "ui_tab",
+        "name": "Alunos/Clientes",
+        "icon": "account_box",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b439c7e2f15a3fea",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "46540bfb4fd123ee",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21e6f105074fed47",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Nome:",
+        "tooltip": "",
+        "group": "149fd14144664b3e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 70,
+        "y": 40,
+        "wires": [
+            [
+                "dee4f23cc1794418"
+            ]
+        ]
+    },
+    {
+        "id": "207a76f4584f3311",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Peso (kg):",
+        "tooltip": "",
+        "group": "149fd14144664b3e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "30a08f48e93c6d45"
+            ]
+        ]
+    },
+    {
+        "id": "d2be875748c22543",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Altura (cm):",
+        "tooltip": "",
+        "group": "149fd14144664b3e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "0544c94610ff4e28"
+            ]
+        ]
+    },
+    {
+        "id": "a470ee18b1ed04fd",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Idade:",
+        "tooltip": "",
+        "group": "149fd14144664b3e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 70,
+        "y": 80,
+        "wires": [
+            [
+                "09baa20ddd6b2faf"
+            ]
+        ]
+    },
+    {
+        "id": "bb545dc952257601",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Tríceps",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "37f1cf5cf9a5f83d"
+            ]
+        ]
+    },
+    {
+        "id": "0e36800c19188de7",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Coxa",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "4f7b91f597e51a5f"
+            ]
+        ]
+    },
+    {
+        "id": "d2b4adc512c3bc14",
+        "type": "ui_date_picker",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Nascimento:",
+        "group": "149fd14144664b3e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "137f85ead51ed031"
+            ]
+        ]
+    },
+    {
+        "id": "5dc321b802847b50",
+        "type": "ui_dropdown",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Sexo:",
+        "tooltip": "",
+        "place": "---",
+        "group": "149fd14144664b3e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Masculino",
+                "value": "masc",
+                "type": "str"
+            },
+            {
+                "label": "Feminino",
+                "value": "fem",
+                "type": "str"
+            },
+            {
+                "label": "---",
+                "value": "ind",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 240,
+        "wires": [
+            [
+                "ee151ef984ab7980"
+            ]
+        ]
+    },
+    {
+        "id": "a7b703ea11bae1a6",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Suprailíaca",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "844d7d2c005b19a9"
+            ]
+        ]
+    },
+    {
+        "id": "f7264dbdb0461396",
+        "type": "ui_button",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Calcular percentual",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "d2dcb8c8e8a9f1b9",
+                "512e90bc8cff65d9"
+            ]
+        ]
+    },
+    {
+        "id": "2e7c454ecdcb7741",
+        "type": "ui_dropdown",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Numero dobras",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "d2eb3bfd00aedcab",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "3",
+                "value": 3,
+                "type": "num"
+            },
+            {
+                "label": "4",
+                "value": 4,
+                "type": "num"
+            },
+            {
+                "label": "7",
+                "value": 7,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 440,
+        "y": 20,
+        "wires": [
+            [
+                "75ea5af6c7ad1fac"
+            ]
+        ]
+    },
+    {
+        "id": "f7fb41b540196a76",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Abdominal",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "4ab8c947921bae60"
+            ]
+        ]
+    },
+    {
+        "id": "64797dc4be5724f2",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Axilar Media",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "5d72932a2f9659a9"
+            ]
+        ]
+    },
+    {
+        "id": "e1c84e26b4e4f7ba",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Subescapular",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "c0fe9609fea696be"
+            ]
+        ]
+    },
+    {
+        "id": "057e9260170f2ef5",
+        "type": "ui_text_input",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "label": "Peitoral",
+        "tooltip": "",
+        "group": "d2eb3bfd00aedcab",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [
+                "99e95a96f4ce4b21"
+            ]
+        ]
+    },
+    {
+        "id": "dee4f23cc1794418",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nome",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee7d3814acd13140",
+        "type": "ui_gauge",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "group": "983aebd7833af63e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "PGC (%)",
+        "label": "Por cento",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "35",
+        "colors": [
+            "#4cce3b",
+            "#e6e600",
+            "#cb3a3a"
+        ],
+        "seg1": "20",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1120,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "09baa20ddd6b2faf",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "idade",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "137f85ead51ed031",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dt_nasc",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0544c94610ff4e28",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "altura",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30a08f48e93c6d45",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "peso",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee151ef984ab7980",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sexo",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75ea5af6c7ad1fac",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "n_dobras",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "844d7d2c005b19a9",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "suprailiaca",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f7b91f597e51a5f",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coxa",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37f1cf5cf9a5f83d",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "triceps",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0fe9609fea696be",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "subescapular",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d72932a2f9659a9",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "axilar",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ab8c947921bae60",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "abdomen",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99e95a96f4ce4b21",
+        "type": "change",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "peitoral",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ae23d24b00ee4d4",
+        "type": "ui_text",
+        "z": "c3f5c0f99b10675b",
+        "group": "dfb278de889fb08e",
+        "order": 9,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Conectar com Google Sheets",
+        "layout": "col-center",
+        "className": "",
+        "x": 90,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d2dcb8c8e8a9f1b9",
+        "type": "function",
+        "z": "c3f5c0f99b10675b",
+        "name": "calcPercentual",
+        "func": "var soma = 0;\nif (flow.get(\"n_dobras\") == 3){\n    if (flow.get(\"sexo\") ==  \"masc\" || flow.get(\"sexo\") == \"ind\"){\n        soma = flow.get(\"peitoral\") + flow.get(\"coxa\") + flow.get(\"abdomen\");\n        var dc = 1.1093800 - 0.0008267 * (soma) + 0.0000016 * (soma * soma) - 0.0002574 * (flow.get(\"idade\"));\n    }else{\n        soma = flow.get(\"triceps\") + flow.get(\"suprailiaca\") + flow.get(\"coxa\")\n        var dc = 1.0994921 - 0.0009929*(soma) + 0.0000023*(soma*soma) - 0.0001392*(flow.get(\"idade\"));\n    }\n}else if (flow.get(\"n_dobras\") == 4){\n    soma = flow.get(\"triceps\") + flow.get(\"coxa\") + flow.get(\"suprailiaca\") + flow.get(\"abdomen\");\n    console.log(soma)\n    if (flow.get(\"sexo\") == \"masc\" || flow.get(\"sexo\") == \"ind\") {\n        var dc = (0.29288 * soma) - (0.0005 * soma*soma) + (0.15845 * flow.get(\"idade\")) - 5.76377;\n    } else { // fórmula de Jackson-Pollock:\n        var dc = (0.29669 * soma) - (0.00043 * soma*soma) + (0.02963 * flow.get(\"idade\")) + 1.4072;\n    }\n}else{\n    soma = flow.get(\"triceps\") + flow.get(\"coxa\") + flow.get(\"suprailiaca\") + flow.get(\"abdomen\") + flow.get(\"peitoral\") + flow.get(\"subscapular\") + flow.get(\"axilar\");\n    var dc = 1.112 - 0.00043499 *(soma) + 0.00000055 *(soma) * 2 - 0.00028826 *(flow.get(\"idade\"))\n}\nvar percent = (495/dc) - 450\nmsg.payload = percent.toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 340,
+        "wires": [
+            [
+                "ee7d3814acd13140",
+                "fddbdc78328f66f2"
+            ]
+        ]
+    },
+    {
+        "id": "e710cd38ba9b9c3b",
+        "type": "ui_text",
+        "z": "c3f5c0f99b10675b",
+        "group": "b439c7e2f15a3fea",
+        "order": 9,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Conectar com Google Sheets",
+        "layout": "col-center",
+        "className": "",
+        "x": 90,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5bfe527bdc08e6cc",
+        "type": "comment",
+        "z": "c3f5c0f99b10675b",
+        "name": "AVALIACAO",
+        "info": "",
+        "x": 90,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a6e6f5dd9270ae54",
+        "type": "comment",
+        "z": "c3f5c0f99b10675b",
+        "name": "HISTORICO",
+        "info": "",
+        "x": 90,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3a798dc3efd0ce63",
+        "type": "comment",
+        "z": "c3f5c0f99b10675b",
+        "name": "ALUNOS",
+        "info": "",
+        "x": 80,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8f57be972d3dfb0d",
+        "type": "ui_button",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "group": "983aebd7833af63e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 180,
+        "wires": [
+            [
+                "ee7d3814acd13140"
+            ]
+        ]
+    },
+    {
+        "id": "d0ee7e6dae6a1f81",
+        "type": "file",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "filename": "/home/rodrigo/Downloads/output.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1330,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fddbdc78328f66f2",
+        "type": "csv",
+        "z": "c3f5c0f99b10675b",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "Result",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1110,
+        "y": 220,
+        "wires": [
+            [
+                "d0ee7e6dae6a1f81"
+            ]
+        ]
+    },
+    {
+        "id": "512e90bc8cff65d9",
+        "type": "function",
+        "z": "c3f5c0f99b10675b",
+        "name": "calcIMC",
+        "func": "var alturam = flow.get(\"altura\")/100;\nmsg.payload = flow.get(\"peso\")/(alturam*alturam);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 380,
+        "wires": [
+            [
+                "a10b23e2d409ee75"
+            ]
+        ]
+    },
+    {
+        "id": "a10b23e2d409ee75",
+        "type": "ui_text",
+        "z": "c3f5c0f99b10675b",
+        "group": "983aebd7833af63e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "IMC",
+        "format": "{{msg.payload}} ",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1110,
+        "y": 260,
+        "wires": []
+    }
+]
